@@ -44,12 +44,22 @@ oddoreven() """
         print(f'Your total is {bill:.2f}')
 billcalculator() """
 
-
-def factors():
+""" def factor():
     factors = []
     n = int(input("Enter a number"))
     for i in range(1, n+1):
         if n % i == 0:
             factors.append(i)
-print(factors)
-factors()
+    print(factors)
+factor() """
+
+#fix el problemo tomorrow
+n1 = int(input("Enter a number"))
+n2 = int(input("Enter another number"))
+def commonfactors(x, y):
+    factors = []
+    for i in range(1, x+1):
+        if x % i and y % i == 0:
+            factors.append(i)
+    print(factors[-1])
+commonfactors(n1, n2)
